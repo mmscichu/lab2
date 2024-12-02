@@ -3,8 +3,9 @@
 #include <memory>
 #include <string>
 
-class LogFactory {
+class LogFactory
+{
 public:
-    static std::unique_ptr<Log> createLog(const std::string& type, const std::string& message);
+    // Statyczna metoda tworząca odpowiedni obiekt Log na podstawie typu
+    static std::unique_ptr<Log> createLog(const std::string &type, const std::string &message);
 };
-
